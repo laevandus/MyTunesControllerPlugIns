@@ -1,0 +1,275 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C8D55D10150362F2008E1AA9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8D55D0F150362F2008E1AA9 /* Foundation.framework */; };
+		C8D55D13150362F2008E1AA9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C8D55D12150362F2008E1AA9 /* main.m */; };
+		C8D55D17150362F2008E1AA9 /* FetchingTest.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = C8D55D16150362F2008E1AA9 /* FetchingTest.1 */; };
+		C8D55D1E15036341008E1AA9 /* ScriptingBridge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8D55D1D15036341008E1AA9 /* ScriptingBridge.framework */; };
+		C8D55D25150366B5008E1AA9 /* AZLyrics.m in Sources */ = {isa = PBXBuildFile; fileRef = C8D55D22150366B5008E1AA9 /* AZLyrics.m */; };
+		C8D55D26150366B5008E1AA9 /* NSMutableString+LyricsFetching.m in Sources */ = {isa = PBXBuildFile; fileRef = C8D55D24150366B5008E1AA9 /* NSMutableString+LyricsFetching.m */; };
+		C8D55D29150366BF008E1AA9 /* MetroLyrics.m in Sources */ = {isa = PBXBuildFile; fileRef = C8D55D28150366BF008E1AA9 /* MetroLyrics.m */; };
+		C8D55D2C150366C8008E1AA9 /* NSString+NumericCharacterReference.m in Sources */ = {isa = PBXBuildFile; fileRef = C8D55D2B150366C8008E1AA9 /* NSString+NumericCharacterReference.m */; };
+		C8D55D2F150366D0008E1AA9 /* PLyrics.m in Sources */ = {isa = PBXBuildFile; fileRef = C8D55D2E150366D0008E1AA9 /* PLyrics.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C8D55D09150362F2008E1AA9 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+				C8D55D17150362F2008E1AA9 /* FetchingTest.1 in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		C8D55D0B150362F2008E1AA9 /* FetchingTest */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = FetchingTest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C8D55D0F150362F2008E1AA9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		C8D55D12150362F2008E1AA9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C8D55D15150362F2008E1AA9 /* FetchingTest-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FetchingTest-Prefix.pch"; sourceTree = "<group>"; };
+		C8D55D16150362F2008E1AA9 /* FetchingTest.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = FetchingTest.1; sourceTree = "<group>"; };
+		C8D55D1D15036341008E1AA9 /* ScriptingBridge.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ScriptingBridge.framework; path = System/Library/Frameworks/ScriptingBridge.framework; sourceTree = SDKROOT; };
+		C8D55D1F150363B5008E1AA9 /* iTunes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iTunes.h; sourceTree = "<group>"; };
+		C8D55D20150366AD008E1AA9 /* LyricsFetching.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LyricsFetching.h; path = /Users/Toomas/Development/Cocoa/MyTunesControllerPlugIns/AZLyrics/AZLyrics/../../LyricsFetching.h; sourceTree = "<absolute>"; };
+		C8D55D21150366B5008E1AA9 /* AZLyrics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AZLyrics.h; path = ../../AZLyrics/AZLyrics/AZLyrics.h; sourceTree = "<group>"; };
+		C8D55D22150366B5008E1AA9 /* AZLyrics.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AZLyrics.m; path = ../../AZLyrics/AZLyrics/AZLyrics.m; sourceTree = "<group>"; };
+		C8D55D23150366B5008E1AA9 /* NSMutableString+LyricsFetching.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSMutableString+LyricsFetching.h"; path = "/Users/Toomas/Development/Cocoa/MyTunesControllerPlugIns/AZLyrics/AZLyrics/../../NSAdditions/NSMutableString+LyricsFetching.h"; sourceTree = "<absolute>"; };
+		C8D55D24150366B5008E1AA9 /* NSMutableString+LyricsFetching.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSMutableString+LyricsFetching.m"; path = "/Users/Toomas/Development/Cocoa/MyTunesControllerPlugIns/AZLyrics/AZLyrics/../../NSAdditions/NSMutableString+LyricsFetching.m"; sourceTree = "<absolute>"; };
+		C8D55D27150366BF008E1AA9 /* MetroLyrics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MetroLyrics.h; path = ../../MetroLyrics/MetroLyrics/MetroLyrics.h; sourceTree = "<group>"; };
+		C8D55D28150366BF008E1AA9 /* MetroLyrics.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MetroLyrics.m; path = ../../MetroLyrics/MetroLyrics/MetroLyrics.m; sourceTree = "<group>"; };
+		C8D55D2A150366C8008E1AA9 /* NSString+NumericCharacterReference.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSString+NumericCharacterReference.h"; path = "/Users/Toomas/Development/Cocoa/MyTunesControllerPlugIns/MetroLyrics/MetroLyrics/../../NSAdditions/NSString+NumericCharacterReference.h"; sourceTree = "<absolute>"; };
+		C8D55D2B150366C8008E1AA9 /* NSString+NumericCharacterReference.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+NumericCharacterReference.m"; path = "/Users/Toomas/Development/Cocoa/MyTunesControllerPlugIns/MetroLyrics/MetroLyrics/../../NSAdditions/NSString+NumericCharacterReference.m"; sourceTree = "<absolute>"; };
+		C8D55D2D150366D0008E1AA9 /* PLyrics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PLyrics.h; path = ../../PLyrics/PLyrics/PLyrics.h; sourceTree = "<group>"; };
+		C8D55D2E150366D0008E1AA9 /* PLyrics.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PLyrics.m; path = ../../PLyrics/PLyrics/PLyrics.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C8D55D08150362F2008E1AA9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C8D55D10150362F2008E1AA9 /* Foundation.framework in Frameworks */,
+				C8D55D1E15036341008E1AA9 /* ScriptingBridge.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C8D55D00150362F1008E1AA9 = {
+			isa = PBXGroup;
+			children = (
+				C8D55D11150362F2008E1AA9 /* FetchingTest */,
+				C8D55D0E150362F2008E1AA9 /* Frameworks */,
+				C8D55D0C150362F2008E1AA9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C8D55D0C150362F2008E1AA9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C8D55D0B150362F2008E1AA9 /* FetchingTest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C8D55D0E150362F2008E1AA9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C8D55D1D15036341008E1AA9 /* ScriptingBridge.framework */,
+				C8D55D0F150362F2008E1AA9 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C8D55D11150362F2008E1AA9 /* FetchingTest */ = {
+			isa = PBXGroup;
+			children = (
+				C8D55D12150362F2008E1AA9 /* main.m */,
+				C8D55D1F150363B5008E1AA9 /* iTunes.h */,
+				C8D55D20150366AD008E1AA9 /* LyricsFetching.h */,
+				C8D55D21150366B5008E1AA9 /* AZLyrics.h */,
+				C8D55D22150366B5008E1AA9 /* AZLyrics.m */,
+				C8D55D27150366BF008E1AA9 /* MetroLyrics.h */,
+				C8D55D28150366BF008E1AA9 /* MetroLyrics.m */,
+				C8D55D2D150366D0008E1AA9 /* PLyrics.h */,
+				C8D55D2E150366D0008E1AA9 /* PLyrics.m */,
+				C8D55D23150366B5008E1AA9 /* NSMutableString+LyricsFetching.h */,
+				C8D55D24150366B5008E1AA9 /* NSMutableString+LyricsFetching.m */,
+				C8D55D2A150366C8008E1AA9 /* NSString+NumericCharacterReference.h */,
+				C8D55D2B150366C8008E1AA9 /* NSString+NumericCharacterReference.m */,
+				C8D55D16150362F2008E1AA9 /* FetchingTest.1 */,
+				C8D55D14150362F2008E1AA9 /* Supporting Files */,
+			);
+			path = FetchingTest;
+			sourceTree = "<group>";
+		};
+		C8D55D14150362F2008E1AA9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C8D55D15150362F2008E1AA9 /* FetchingTest-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C8D55D0A150362F2008E1AA9 /* FetchingTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C8D55D1A150362F2008E1AA9 /* Build configuration list for PBXNativeTarget "FetchingTest" */;
+			buildPhases = (
+				C8D55D07150362F2008E1AA9 /* Sources */,
+				C8D55D08150362F2008E1AA9 /* Frameworks */,
+				C8D55D09150362F2008E1AA9 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FetchingTest;
+			productName = FetchingTest;
+			productReference = C8D55D0B150362F2008E1AA9 /* FetchingTest */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C8D55D02150362F1008E1AA9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+				ORGANIZATIONNAME = "Toomas Vahter";
+			};
+			buildConfigurationList = C8D55D05150362F1008E1AA9 /* Build configuration list for PBXProject "FetchingTest" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = C8D55D00150362F1008E1AA9;
+			productRefGroup = C8D55D0C150362F2008E1AA9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C8D55D0A150362F2008E1AA9 /* FetchingTest */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C8D55D07150362F2008E1AA9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C8D55D13150362F2008E1AA9 /* main.m in Sources */,
+				C8D55D25150366B5008E1AA9 /* AZLyrics.m in Sources */,
+				C8D55D26150366B5008E1AA9 /* NSMutableString+LyricsFetching.m in Sources */,
+				C8D55D29150366BF008E1AA9 /* MetroLyrics.m in Sources */,
+				C8D55D2C150366C8008E1AA9 /* NSString+NumericCharacterReference.m in Sources */,
+				C8D55D2F150366D0008E1AA9 /* PLyrics.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		C8D55D18150362F2008E1AA9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		C8D55D19150362F2008E1AA9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		C8D55D1B150362F2008E1AA9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FetchingTest/FetchingTest-Prefix.pch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		C8D55D1C150362F2008E1AA9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FetchingTest/FetchingTest-Prefix.pch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C8D55D05150362F1008E1AA9 /* Build configuration list for PBXProject "FetchingTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C8D55D18150362F2008E1AA9 /* Debug */,
+				C8D55D19150362F2008E1AA9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C8D55D1A150362F2008E1AA9 /* Build configuration list for PBXNativeTarget "FetchingTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C8D55D1B150362F2008E1AA9 /* Debug */,
+				C8D55D1C150362F2008E1AA9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C8D55D02150362F1008E1AA9 /* Project object */;
+}

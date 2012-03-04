@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'FetchingTest' target in the 'FetchingTest' project
+//
+
+#ifdef __OBJC__
+	#import <Foundation/Foundation.h>
+#endif
