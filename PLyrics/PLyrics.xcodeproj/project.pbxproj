@@ -1,0 +1,265 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C82F84E814ADD892001B15AF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C82F84E614ADD892001B15AF /* InfoPlist.strings */; };
+		C82F84F014ADD8B8001B15AF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C82F84EF14ADD8B8001B15AF /* Foundation.framework */; };
+		C82F84F414ADD8DD001B15AF /* PLyrics.m in Sources */ = {isa = PBXBuildFile; fileRef = C82F84F314ADD8DD001B15AF /* PLyrics.m */; };
+		C8D55CB315035ACE008E1AA9 /* NSMutableString+LyricsFetching.m in Sources */ = {isa = PBXBuildFile; fileRef = C8D55CB215035ACE008E1AA9 /* NSMutableString+LyricsFetching.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		C82F84DE14ADD892001B15AF /* PLyrics.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PLyrics.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		C82F84E514ADD892001B15AF /* PLyrics-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PLyrics-Info.plist"; sourceTree = "<group>"; };
+		C82F84E714ADD892001B15AF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C82F84E914ADD892001B15AF /* PLyrics-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PLyrics-Prefix.pch"; sourceTree = "<group>"; };
+		C82F84EF14ADD8B8001B15AF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		C82F84F214ADD8DD001B15AF /* PLyrics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLyrics.h; sourceTree = "<group>"; };
+		C82F84F314ADD8DD001B15AF /* PLyrics.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLyrics.m; sourceTree = "<group>"; };
+		C8D55CA715035A9C008E1AA9 /* LyricsFetching.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LyricsFetching.h; path = ../../LyricsFetching.h; sourceTree = "<group>"; };
+		C8D55CB115035ACE008E1AA9 /* NSMutableString+LyricsFetching.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSMutableString+LyricsFetching.h"; path = "../../NSAdditions/NSMutableString+LyricsFetching.h"; sourceTree = "<group>"; };
+		C8D55CB215035ACE008E1AA9 /* NSMutableString+LyricsFetching.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSMutableString+LyricsFetching.m"; path = "../../NSAdditions/NSMutableString+LyricsFetching.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C82F84DB14ADD892001B15AF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C82F84F014ADD8B8001B15AF /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C82F84D314ADD890001B15AF = {
+			isa = PBXGroup;
+			children = (
+				C82F84E314ADD892001B15AF /* PLyrics */,
+				C82F84E014ADD892001B15AF /* Frameworks */,
+				C82F84DF14ADD892001B15AF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C82F84DF14ADD892001B15AF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C82F84DE14ADD892001B15AF /* PLyrics.bundle */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C82F84E014ADD892001B15AF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C82F84EF14ADD8B8001B15AF /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C82F84E314ADD892001B15AF /* PLyrics */ = {
+			isa = PBXGroup;
+			children = (
+				C8D55CA715035A9C008E1AA9 /* LyricsFetching.h */,
+				C82F84F214ADD8DD001B15AF /* PLyrics.h */,
+				C82F84F314ADD8DD001B15AF /* PLyrics.m */,
+				C8D55CB115035ACE008E1AA9 /* NSMutableString+LyricsFetching.h */,
+				C8D55CB215035ACE008E1AA9 /* NSMutableString+LyricsFetching.m */,
+				C82F84E414ADD892001B15AF /* Supporting Files */,
+			);
+			path = PLyrics;
+			sourceTree = "<group>";
+		};
+		C82F84E414ADD892001B15AF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C82F84E514ADD892001B15AF /* PLyrics-Info.plist */,
+				C82F84E614ADD892001B15AF /* InfoPlist.strings */,
+				C82F84E914ADD892001B15AF /* PLyrics-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C82F84DD14ADD892001B15AF /* PLyrics */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C82F84EC14ADD892001B15AF /* Build configuration list for PBXNativeTarget "PLyrics" */;
+			buildPhases = (
+				C82F84DA14ADD892001B15AF /* Sources */,
+				C82F84DB14ADD892001B15AF /* Frameworks */,
+				C82F84DC14ADD892001B15AF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PLyrics;
+			productName = PLyrics;
+			productReference = C82F84DE14ADD892001B15AF /* PLyrics.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C82F84D514ADD890001B15AF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+				ORGANIZATIONNAME = "Toomas Vahter";
+			};
+			buildConfigurationList = C82F84D814ADD890001B15AF /* Build configuration list for PBXProject "PLyrics" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = C82F84D314ADD890001B15AF;
+			productRefGroup = C82F84DF14ADD892001B15AF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C82F84DD14ADD892001B15AF /* PLyrics */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C82F84DC14ADD892001B15AF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C82F84E814ADD892001B15AF /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C82F84DA14ADD892001B15AF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C82F84F414ADD8DD001B15AF /* PLyrics.m in Sources */,
+				C8D55CB315035ACE008E1AA9 /* NSMutableString+LyricsFetching.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		C82F84E614ADD892001B15AF /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C82F84E714ADD892001B15AF /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C82F84EA14ADD892001B15AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		C82F84EB14ADD892001B15AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		C82F84ED14ADD892001B15AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PLyrics/PLyrics-Prefix.pch";
+				INFOPLIST_FILE = "PLyrics/PLyrics-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		C82F84EE14ADD892001B15AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PLyrics/PLyrics-Prefix.pch";
+				INFOPLIST_FILE = "PLyrics/PLyrics-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C82F84D814ADD890001B15AF /* Build configuration list for PBXProject "PLyrics" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C82F84EA14ADD892001B15AF /* Debug */,
+				C82F84EB14ADD892001B15AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C82F84EC14ADD892001B15AF /* Build configuration list for PBXNativeTarget "PLyrics" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C82F84ED14ADD892001B15AF /* Debug */,
+				C82F84EE14ADD892001B15AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C82F84D514ADD890001B15AF /* Project object */;
+}
