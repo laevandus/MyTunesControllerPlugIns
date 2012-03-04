@@ -8,9 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		C8B14EEA14F90CFF00C6FDC2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C8B14EE814F90CFF00C6FDC2 /* InfoPlist.strings */; };
-		C8B14EF714F90D2F00C6FDC2 /* AZLyrics.m in Sources */ = {isa = PBXBuildFile; fileRef = C8B14EF614F90D2F00C6FDC2 /* AZLyrics.m */; };
 		C8B14EFC14F90DA500C6FDC2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8B14EFB14F90DA500C6FDC2 /* Foundation.framework */; };
-		C8D55CAA15035AAF008E1AA9 /* NSMutableString+LyricsFetching.m in Sources */ = {isa = PBXBuildFile; fileRef = C8D55CA915035AAF008E1AA9 /* NSMutableString+LyricsFetching.m */; };
+		C8D55CCC15036035008E1AA9 /* AZLyrics.m in Sources */ = {isa = PBXBuildFile; fileRef = C8D55CCB15036035008E1AA9 /* AZLyrics.m */; };
+		C8D55CE1150360A6008E1AA9 /* NSMutableString+LyricsFetching.m in Sources */ = {isa = PBXBuildFile; fileRef = C8D55CE0150360A6008E1AA9 /* NSMutableString+LyricsFetching.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -18,12 +18,12 @@
 		C8B14EE714F90CFF00C6FDC2 /* AZLyrics-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AZLyrics-Info.plist"; sourceTree = "<group>"; };
 		C8B14EE914F90CFF00C6FDC2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		C8B14EEB14F90CFF00C6FDC2 /* AZLyrics-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AZLyrics-Prefix.pch"; sourceTree = "<group>"; };
-		C8B14EF514F90D2F00C6FDC2 /* AZLyrics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AZLyrics.h; sourceTree = "<group>"; };
-		C8B14EF614F90D2F00C6FDC2 /* AZLyrics.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AZLyrics.m; sourceTree = "<group>"; };
 		C8B14EFB14F90DA500C6FDC2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		C8D55CA515035A8D008E1AA9 /* LyricsFetching.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LyricsFetching.h; path = ../../LyricsFetching.h; sourceTree = "<group>"; };
-		C8D55CA815035AAF008E1AA9 /* NSMutableString+LyricsFetching.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSMutableString+LyricsFetching.h"; path = "../../NSAdditions/NSMutableString+LyricsFetching.h"; sourceTree = "<group>"; };
-		C8D55CA915035AAF008E1AA9 /* NSMutableString+LyricsFetching.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSMutableString+LyricsFetching.m"; path = "../../NSAdditions/NSMutableString+LyricsFetching.m"; sourceTree = "<group>"; };
+		C8D55CCA15036035008E1AA9 /* AZLyrics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AZLyrics.h; sourceTree = "<group>"; };
+		C8D55CCB15036035008E1AA9 /* AZLyrics.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AZLyrics.m; sourceTree = "<group>"; };
+		C8D55CD31503605E008E1AA9 /* LyricsFetching.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LyricsFetching.h; path = ../../LyricsFetching.h; sourceTree = "<group>"; };
+		C8D55CDF150360A6008E1AA9 /* NSMutableString+LyricsFetching.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSMutableString+LyricsFetching.h"; path = "../../NSAdditions/NSMutableString+LyricsFetching.h"; sourceTree = "<group>"; };
+		C8D55CE0150360A6008E1AA9 /* NSMutableString+LyricsFetching.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSMutableString+LyricsFetching.m"; path = "../../NSAdditions/NSMutableString+LyricsFetching.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,11 +66,11 @@
 		C8B14EE514F90CFF00C6FDC2 /* AZLyrics */ = {
 			isa = PBXGroup;
 			children = (
-				C8D55CA515035A8D008E1AA9 /* LyricsFetching.h */,
-				C8B14EF514F90D2F00C6FDC2 /* AZLyrics.h */,
-				C8B14EF614F90D2F00C6FDC2 /* AZLyrics.m */,
-				C8D55CA815035AAF008E1AA9 /* NSMutableString+LyricsFetching.h */,
-				C8D55CA915035AAF008E1AA9 /* NSMutableString+LyricsFetching.m */,
+				C8D55CD31503605E008E1AA9 /* LyricsFetching.h */,
+				C8D55CCA15036035008E1AA9 /* AZLyrics.h */,
+				C8D55CCB15036035008E1AA9 /* AZLyrics.m */,
+				C8D55CDF150360A6008E1AA9 /* NSMutableString+LyricsFetching.h */,
+				C8D55CE0150360A6008E1AA9 /* NSMutableString+LyricsFetching.m */,
 				C8B14EE614F90CFF00C6FDC2 /* Supporting Files */,
 			);
 			path = AZLyrics;
@@ -148,8 +148,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C8B14EF714F90D2F00C6FDC2 /* AZLyrics.m in Sources */,
-				C8D55CAA15035AAF008E1AA9 /* NSMutableString+LyricsFetching.m in Sources */,
+				C8D55CCC15036035008E1AA9 /* AZLyrics.m in Sources */,
+				C8D55CE1150360A6008E1AA9 /* NSMutableString+LyricsFetching.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

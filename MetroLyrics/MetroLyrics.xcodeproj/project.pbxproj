@@ -9,9 +9,9 @@
 /* Begin PBXBuildFile section */
 		C82D8B3014B0A6E6000C0E24 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C82D8B2F14B0A6E6000C0E24 /* Foundation.framework */; };
 		C8CA1FBE14AF298D007E717D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C8CA1FBC14AF298D007E717D /* InfoPlist.strings */; };
-		C8CA1FCE14AF2A0C007E717D /* MetroLyrics.m in Sources */ = {isa = PBXBuildFile; fileRef = C8CA1FCD14AF2A0C007E717D /* MetroLyrics.m */; };
-		C8D55CAF15035ABE008E1AA9 /* NSMutableString+LyricsFetching.m in Sources */ = {isa = PBXBuildFile; fileRef = C8D55CAC15035ABE008E1AA9 /* NSMutableString+LyricsFetching.m */; };
-		C8D55CB015035ABE008E1AA9 /* NSString+NumericCharacterReference.m in Sources */ = {isa = PBXBuildFile; fileRef = C8D55CAE15035ABE008E1AA9 /* NSString+NumericCharacterReference.m */; };
+		C8D55CCF15036046008E1AA9 /* MetroLyrics.m in Sources */ = {isa = PBXBuildFile; fileRef = C8D55CCE15036046008E1AA9 /* MetroLyrics.m */; };
+		C8D55CDD1503609B008E1AA9 /* NSMutableString+LyricsFetching.m in Sources */ = {isa = PBXBuildFile; fileRef = C8D55CDA1503609B008E1AA9 /* NSMutableString+LyricsFetching.m */; };
+		C8D55CDE1503609B008E1AA9 /* NSString+NumericCharacterReference.m in Sources */ = {isa = PBXBuildFile; fileRef = C8D55CDC1503609B008E1AA9 /* NSString+NumericCharacterReference.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,13 +20,13 @@
 		C8CA1FBB14AF298D007E717D /* MetroLyrics-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MetroLyrics-Info.plist"; sourceTree = "<group>"; };
 		C8CA1FBD14AF298D007E717D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		C8CA1FBF14AF298D007E717D /* MetroLyrics-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MetroLyrics-Prefix.pch"; sourceTree = "<group>"; };
-		C8CA1FCC14AF2A0C007E717D /* MetroLyrics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MetroLyrics.h; sourceTree = "<group>"; };
-		C8CA1FCD14AF2A0C007E717D /* MetroLyrics.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MetroLyrics.m; sourceTree = "<group>"; };
-		C8D55CA615035A95008E1AA9 /* LyricsFetching.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LyricsFetching.h; path = ../../LyricsFetching.h; sourceTree = "<group>"; };
-		C8D55CAB15035ABE008E1AA9 /* NSMutableString+LyricsFetching.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSMutableString+LyricsFetching.h"; path = "../../NSAdditions/NSMutableString+LyricsFetching.h"; sourceTree = "<group>"; };
-		C8D55CAC15035ABE008E1AA9 /* NSMutableString+LyricsFetching.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSMutableString+LyricsFetching.m"; path = "../../NSAdditions/NSMutableString+LyricsFetching.m"; sourceTree = "<group>"; };
-		C8D55CAD15035ABE008E1AA9 /* NSString+NumericCharacterReference.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSString+NumericCharacterReference.h"; path = "../../NSAdditions/NSString+NumericCharacterReference.h"; sourceTree = "<group>"; };
-		C8D55CAE15035ABE008E1AA9 /* NSString+NumericCharacterReference.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+NumericCharacterReference.m"; path = "../../NSAdditions/NSString+NumericCharacterReference.m"; sourceTree = "<group>"; };
+		C8D55CCD15036046008E1AA9 /* MetroLyrics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MetroLyrics.h; sourceTree = "<group>"; };
+		C8D55CCE15036046008E1AA9 /* MetroLyrics.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MetroLyrics.m; sourceTree = "<group>"; };
+		C8D55CD415036063008E1AA9 /* LyricsFetching.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LyricsFetching.h; path = ../../LyricsFetching.h; sourceTree = "<group>"; };
+		C8D55CD91503609B008E1AA9 /* NSMutableString+LyricsFetching.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSMutableString+LyricsFetching.h"; path = "../../NSAdditions/NSMutableString+LyricsFetching.h"; sourceTree = "<group>"; };
+		C8D55CDA1503609B008E1AA9 /* NSMutableString+LyricsFetching.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSMutableString+LyricsFetching.m"; path = "../../NSAdditions/NSMutableString+LyricsFetching.m"; sourceTree = "<group>"; };
+		C8D55CDB1503609B008E1AA9 /* NSString+NumericCharacterReference.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSString+NumericCharacterReference.h"; path = "../../NSAdditions/NSString+NumericCharacterReference.h"; sourceTree = "<group>"; };
+		C8D55CDC1503609B008E1AA9 /* NSString+NumericCharacterReference.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+NumericCharacterReference.m"; path = "../../NSAdditions/NSString+NumericCharacterReference.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,13 +69,13 @@
 		C8CA1FB914AF298D007E717D /* MetroLyrics */ = {
 			isa = PBXGroup;
 			children = (
-				C8D55CA615035A95008E1AA9 /* LyricsFetching.h */,
-				C8CA1FCC14AF2A0C007E717D /* MetroLyrics.h */,
-				C8CA1FCD14AF2A0C007E717D /* MetroLyrics.m */,
-				C8D55CAB15035ABE008E1AA9 /* NSMutableString+LyricsFetching.h */,
-				C8D55CAC15035ABE008E1AA9 /* NSMutableString+LyricsFetching.m */,
-				C8D55CAD15035ABE008E1AA9 /* NSString+NumericCharacterReference.h */,
-				C8D55CAE15035ABE008E1AA9 /* NSString+NumericCharacterReference.m */,
+				C8D55CD415036063008E1AA9 /* LyricsFetching.h */,
+				C8D55CCD15036046008E1AA9 /* MetroLyrics.h */,
+				C8D55CCE15036046008E1AA9 /* MetroLyrics.m */,
+				C8D55CD91503609B008E1AA9 /* NSMutableString+LyricsFetching.h */,
+				C8D55CDA1503609B008E1AA9 /* NSMutableString+LyricsFetching.m */,
+				C8D55CDB1503609B008E1AA9 /* NSString+NumericCharacterReference.h */,
+				C8D55CDC1503609B008E1AA9 /* NSString+NumericCharacterReference.m */,
 				C8CA1FBA14AF298D007E717D /* Supporting Files */,
 			);
 			path = MetroLyrics;
@@ -153,9 +153,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C8CA1FCE14AF2A0C007E717D /* MetroLyrics.m in Sources */,
-				C8D55CAF15035ABE008E1AA9 /* NSMutableString+LyricsFetching.m in Sources */,
-				C8D55CB015035ABE008E1AA9 /* NSString+NumericCharacterReference.m in Sources */,
+				C8D55CCF15036046008E1AA9 /* MetroLyrics.m in Sources */,
+				C8D55CDD1503609B008E1AA9 /* NSMutableString+LyricsFetching.m in Sources */,
+				C8D55CDE1503609B008E1AA9 /* NSString+NumericCharacterReference.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

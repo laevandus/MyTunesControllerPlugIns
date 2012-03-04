@@ -9,8 +9,8 @@
 /* Begin PBXBuildFile section */
 		C82F84E814ADD892001B15AF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C82F84E614ADD892001B15AF /* InfoPlist.strings */; };
 		C82F84F014ADD8B8001B15AF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C82F84EF14ADD8B8001B15AF /* Foundation.framework */; };
-		C82F84F414ADD8DD001B15AF /* PLyrics.m in Sources */ = {isa = PBXBuildFile; fileRef = C82F84F314ADD8DD001B15AF /* PLyrics.m */; };
-		C8D55CB315035ACE008E1AA9 /* NSMutableString+LyricsFetching.m in Sources */ = {isa = PBXBuildFile; fileRef = C8D55CB215035ACE008E1AA9 /* NSMutableString+LyricsFetching.m */; };
+		C8D55CD215036053008E1AA9 /* PLyrics.m in Sources */ = {isa = PBXBuildFile; fileRef = C8D55CD115036053008E1AA9 /* PLyrics.m */; };
+		C8D55CD815036075008E1AA9 /* NSMutableString+LyricsFetching.m in Sources */ = {isa = PBXBuildFile; fileRef = C8D55CD715036075008E1AA9 /* NSMutableString+LyricsFetching.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,11 +19,11 @@
 		C82F84E714ADD892001B15AF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		C82F84E914ADD892001B15AF /* PLyrics-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PLyrics-Prefix.pch"; sourceTree = "<group>"; };
 		C82F84EF14ADD8B8001B15AF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		C82F84F214ADD8DD001B15AF /* PLyrics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLyrics.h; sourceTree = "<group>"; };
-		C82F84F314ADD8DD001B15AF /* PLyrics.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLyrics.m; sourceTree = "<group>"; };
-		C8D55CA715035A9C008E1AA9 /* LyricsFetching.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LyricsFetching.h; path = ../../LyricsFetching.h; sourceTree = "<group>"; };
-		C8D55CB115035ACE008E1AA9 /* NSMutableString+LyricsFetching.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSMutableString+LyricsFetching.h"; path = "../../NSAdditions/NSMutableString+LyricsFetching.h"; sourceTree = "<group>"; };
-		C8D55CB215035ACE008E1AA9 /* NSMutableString+LyricsFetching.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSMutableString+LyricsFetching.m"; path = "../../NSAdditions/NSMutableString+LyricsFetching.m"; sourceTree = "<group>"; };
+		C8D55CD015036053008E1AA9 /* PLyrics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLyrics.h; sourceTree = "<group>"; };
+		C8D55CD115036053008E1AA9 /* PLyrics.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLyrics.m; sourceTree = "<group>"; };
+		C8D55CD515036068008E1AA9 /* LyricsFetching.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LyricsFetching.h; path = ../../LyricsFetching.h; sourceTree = "<group>"; };
+		C8D55CD615036075008E1AA9 /* NSMutableString+LyricsFetching.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSMutableString+LyricsFetching.h"; path = "../../NSAdditions/NSMutableString+LyricsFetching.h"; sourceTree = "<group>"; };
+		C8D55CD715036075008E1AA9 /* NSMutableString+LyricsFetching.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSMutableString+LyricsFetching.m"; path = "../../NSAdditions/NSMutableString+LyricsFetching.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,11 +66,11 @@
 		C82F84E314ADD892001B15AF /* PLyrics */ = {
 			isa = PBXGroup;
 			children = (
-				C8D55CA715035A9C008E1AA9 /* LyricsFetching.h */,
-				C82F84F214ADD8DD001B15AF /* PLyrics.h */,
-				C82F84F314ADD8DD001B15AF /* PLyrics.m */,
-				C8D55CB115035ACE008E1AA9 /* NSMutableString+LyricsFetching.h */,
-				C8D55CB215035ACE008E1AA9 /* NSMutableString+LyricsFetching.m */,
+				C8D55CD515036068008E1AA9 /* LyricsFetching.h */,
+				C8D55CD015036053008E1AA9 /* PLyrics.h */,
+				C8D55CD115036053008E1AA9 /* PLyrics.m */,
+				C8D55CD615036075008E1AA9 /* NSMutableString+LyricsFetching.h */,
+				C8D55CD715036075008E1AA9 /* NSMutableString+LyricsFetching.m */,
 				C82F84E414ADD892001B15AF /* Supporting Files */,
 			);
 			path = PLyrics;
@@ -148,8 +148,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C82F84F414ADD8DD001B15AF /* PLyrics.m in Sources */,
-				C8D55CB315035ACE008E1AA9 /* NSMutableString+LyricsFetching.m in Sources */,
+				C8D55CD215036053008E1AA9 /* PLyrics.m in Sources */,
+				C8D55CD815036075008E1AA9 /* NSMutableString+LyricsFetching.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
