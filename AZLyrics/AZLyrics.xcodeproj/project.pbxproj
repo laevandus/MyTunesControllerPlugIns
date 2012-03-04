@@ -1,0 +1,265 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C8B14EEA14F90CFF00C6FDC2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C8B14EE814F90CFF00C6FDC2 /* InfoPlist.strings */; };
+		C8B14EF714F90D2F00C6FDC2 /* AZLyrics.m in Sources */ = {isa = PBXBuildFile; fileRef = C8B14EF614F90D2F00C6FDC2 /* AZLyrics.m */; };
+		C8B14EFC14F90DA500C6FDC2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8B14EFB14F90DA500C6FDC2 /* Foundation.framework */; };
+		C8D55CAA15035AAF008E1AA9 /* NSMutableString+LyricsFetching.m in Sources */ = {isa = PBXBuildFile; fileRef = C8D55CA915035AAF008E1AA9 /* NSMutableString+LyricsFetching.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		C8B14EE014F90CFF00C6FDC2 /* AZLyrics.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AZLyrics.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		C8B14EE714F90CFF00C6FDC2 /* AZLyrics-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AZLyrics-Info.plist"; sourceTree = "<group>"; };
+		C8B14EE914F90CFF00C6FDC2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C8B14EEB14F90CFF00C6FDC2 /* AZLyrics-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AZLyrics-Prefix.pch"; sourceTree = "<group>"; };
+		C8B14EF514F90D2F00C6FDC2 /* AZLyrics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AZLyrics.h; sourceTree = "<group>"; };
+		C8B14EF614F90D2F00C6FDC2 /* AZLyrics.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AZLyrics.m; sourceTree = "<group>"; };
+		C8B14EFB14F90DA500C6FDC2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		C8D55CA515035A8D008E1AA9 /* LyricsFetching.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LyricsFetching.h; path = ../../LyricsFetching.h; sourceTree = "<group>"; };
+		C8D55CA815035AAF008E1AA9 /* NSMutableString+LyricsFetching.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSMutableString+LyricsFetching.h"; path = "../../NSAdditions/NSMutableString+LyricsFetching.h"; sourceTree = "<group>"; };
+		C8D55CA915035AAF008E1AA9 /* NSMutableString+LyricsFetching.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSMutableString+LyricsFetching.m"; path = "../../NSAdditions/NSMutableString+LyricsFetching.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C8B14EDD14F90CFF00C6FDC2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C8B14EFC14F90DA500C6FDC2 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C8B14ED514F90CFF00C6FDC2 = {
+			isa = PBXGroup;
+			children = (
+				C8B14EE514F90CFF00C6FDC2 /* AZLyrics */,
+				C8B14EE214F90CFF00C6FDC2 /* Frameworks */,
+				C8B14EE114F90CFF00C6FDC2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C8B14EE114F90CFF00C6FDC2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C8B14EE014F90CFF00C6FDC2 /* AZLyrics.bundle */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C8B14EE214F90CFF00C6FDC2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C8B14EFB14F90DA500C6FDC2 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C8B14EE514F90CFF00C6FDC2 /* AZLyrics */ = {
+			isa = PBXGroup;
+			children = (
+				C8D55CA515035A8D008E1AA9 /* LyricsFetching.h */,
+				C8B14EF514F90D2F00C6FDC2 /* AZLyrics.h */,
+				C8B14EF614F90D2F00C6FDC2 /* AZLyrics.m */,
+				C8D55CA815035AAF008E1AA9 /* NSMutableString+LyricsFetching.h */,
+				C8D55CA915035AAF008E1AA9 /* NSMutableString+LyricsFetching.m */,
+				C8B14EE614F90CFF00C6FDC2 /* Supporting Files */,
+			);
+			path = AZLyrics;
+			sourceTree = "<group>";
+		};
+		C8B14EE614F90CFF00C6FDC2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C8B14EE714F90CFF00C6FDC2 /* AZLyrics-Info.plist */,
+				C8B14EE814F90CFF00C6FDC2 /* InfoPlist.strings */,
+				C8B14EEB14F90CFF00C6FDC2 /* AZLyrics-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C8B14EDF14F90CFF00C6FDC2 /* AZLyrics */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C8B14EEE14F90CFF00C6FDC2 /* Build configuration list for PBXNativeTarget "AZLyrics" */;
+			buildPhases = (
+				C8B14EDC14F90CFF00C6FDC2 /* Sources */,
+				C8B14EDD14F90CFF00C6FDC2 /* Frameworks */,
+				C8B14EDE14F90CFF00C6FDC2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AZLyrics;
+			productName = AZLyrics;
+			productReference = C8B14EE014F90CFF00C6FDC2 /* AZLyrics.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C8B14ED714F90CFF00C6FDC2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+				ORGANIZATIONNAME = "Toomas Vahter";
+			};
+			buildConfigurationList = C8B14EDA14F90CFF00C6FDC2 /* Build configuration list for PBXProject "AZLyrics" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = C8B14ED514F90CFF00C6FDC2;
+			productRefGroup = C8B14EE114F90CFF00C6FDC2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C8B14EDF14F90CFF00C6FDC2 /* AZLyrics */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C8B14EDE14F90CFF00C6FDC2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C8B14EEA14F90CFF00C6FDC2 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C8B14EDC14F90CFF00C6FDC2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C8B14EF714F90D2F00C6FDC2 /* AZLyrics.m in Sources */,
+				C8D55CAA15035AAF008E1AA9 /* NSMutableString+LyricsFetching.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		C8B14EE814F90CFF00C6FDC2 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C8B14EE914F90CFF00C6FDC2 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C8B14EEC14F90CFF00C6FDC2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		C8B14EED14F90CFF00C6FDC2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		C8B14EEF14F90CFF00C6FDC2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AZLyrics/AZLyrics-Prefix.pch";
+				INFOPLIST_FILE = "AZLyrics/AZLyrics-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		C8B14EF014F90CFF00C6FDC2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AZLyrics/AZLyrics-Prefix.pch";
+				INFOPLIST_FILE = "AZLyrics/AZLyrics-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C8B14EDA14F90CFF00C6FDC2 /* Build configuration list for PBXProject "AZLyrics" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C8B14EEC14F90CFF00C6FDC2 /* Debug */,
+				C8B14EED14F90CFF00C6FDC2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C8B14EEE14F90CFF00C6FDC2 /* Build configuration list for PBXNativeTarget "AZLyrics" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C8B14EEF14F90CFF00C6FDC2 /* Debug */,
+				C8B14EF014F90CFF00C6FDC2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C8B14ED714F90CFF00C6FDC2 /* Project object */;
+}

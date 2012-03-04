@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'AZLyrics' target in the 'AZLyrics' project
+//
+
+#ifdef __OBJC__
+	#import <Cocoa/Cocoa.h>
+#endif
