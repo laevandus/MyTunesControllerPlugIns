@@ -9,6 +9,6 @@ PlugIns used by MyTunesController for fetching lyrics.
 
 Best start would be to check examples I have included.
 
-After bulding a plug-in, copy it here:
+After building a plug-in, copy it here:
 ~/Library/Application Support/MyTunesController/PlugIns
 
