@@ -30,42 +30,25 @@
 
 @implementation NSMutableString (LyricsFetching)
 
-- (void)deleteCharactersFromRangeOfString:(NSString *)startString toRangeOfString:(NSString *)endString
+- (BOOL)deleteCharactersFromString:(NSString *)startString toString:(NSString *)stopString includingStrings:(BOOL)flag
 {
-	NSRange startRange = [self rangeOfString:startString options:NSCaseInsensitiveSearch];
-	
-	if (startRange.location == NSNotFound)
-		return;
-	
-	NSRange endRange = [self rangeOfString:endString options:NSCaseInsensitiveSearch range:NSMakeRange(NSMaxRange(startRange), [self length] - NSMaxRange(startRange))];
-	
-	if (startRange.length > 0 && endRange.length > 0 && NSMaxRange(startRange) < endRange.location) 
-	{
-		NSRange deleteRange = NSMakeRange(startRange.location, NSMaxRange(endRange) - startRange.location);
-		[self deleteCharactersInRange:deleteRange];
-	}
-}
-
-
-- (void)deleteCharactersToMaximumRangeOfString:(NSString *)searchString
-{
-	NSRange range = [self rangeOfString:searchString options:NSCaseInsensitiveSearch];
-	
-	if (range.location != NSNotFound) 
-	{
-		[self deleteCharactersInRange:NSMakeRange(0, NSMaxRange(range))];
-	}
-}
-
-
-- (void)deleteCharactersFromMaximumRangeOfString:(NSString *)searchString
-{
-	NSRange range = [self rangeOfString:searchString options:NSCaseInsensitiveSearch];
-
-	if (range.location != NSNotFound) 
-	{
-		[self deleteCharactersInRange:NSMakeRange(NSMaxRange(range), [self length] - NSMaxRange(range))];
-	}
+    BOOL result = NO;
+    NSRange startRange = [self rangeOfString:startString];
+    NSRange endRange = [self rangeOfString:stopString];
+    
+    if (startRange.location != NSNotFound && endRange.location != NSNotFound)
+    {
+        NSUInteger startIndex = flag ? startRange.location : NSMaxRange(startRange);
+        NSUInteger stopIndex = flag ? NSMaxRange(endRange) : endRange.location;
+        
+        if (stopIndex > startIndex)
+        {
+            [self deleteCharactersInRange:NSMakeRange(startIndex, stopIndex - startIndex)];
+            result = YES;
+        }
+    }
+    
+    return result;
 }
 
 

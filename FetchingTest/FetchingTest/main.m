@@ -25,18 +25,14 @@
 //  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 //  THE SOFTWARE.
 
-
 #import <Foundation/Foundation.h>
 #import "iTunes.h"
 #import "LyricsFetching.h"
 #import "AZLyrics.h"
-#import "MetroLyrics.h"
 #import "PLyrics.h"
-
 
 int main(int argc, const char * argv[])
 {
-
 	@autoreleasepool 
 	{
 	    // This is a helper application for testing plug-ins.
@@ -55,13 +51,13 @@ int main(int argc, const char * argv[])
 		[[iTunes sources] enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) 
 		{
 			[[obj playlists] enumerateObjectsUsingBlock:^(id object, NSUInteger index, BOOL *stop)
-			 {
-				 if ([[object name] isEqualToString:@"FetchTest"]) 
-				 {
-					 fetchTestPlaylist = object;
-					 isPlaylistFound = YES;
-					 *stop = YES;
-				 }
+             {
+                 if ([[object name] isEqualToString:@"FetchTest"])
+                 {
+                     fetchTestPlaylist = object;
+                     isPlaylistFound = YES;
+                     *stop = YES;
+                 }
 			 }];
 			
 			*stop = isPlaylistFound;
@@ -74,11 +70,9 @@ int main(int argc, const char * argv[])
 		}
 		
 		// Initiate lyrics fetching instances
-		NSArray *plugIns = [NSArray arrayWithObjects:
-							[[AZLyrics alloc] init],
-							[[MetroLyrics alloc] init],
-							[[PLyrics alloc] init], 
-							nil];
+		NSArray *plugIns = @[
+            [[AZLyrics alloc] init],
+							[[PLyrics alloc] init]];
 		
 		// Fetch lyrics
 		iTunesTrack *track = nil;
@@ -91,21 +85,21 @@ int main(int argc, const char * argv[])
 			
 			for (plugIn in plugIns) 
 			{
-				NSLog(@"Fetching using %@…", [plugIn name]);
+                NSLog(@"Fetching using %@…", [plugIn name]);
 				
-				lyrics = [(id<LyricsFetching>)plugIn lyricsForTrackName:[track name] artist:[track artist] album:[track artist]];
-				usleep(1000000);
+                lyrics = [(id<LyricsFetching>)plugIn lyricsForTrackName:[track name] artist:[track artist] album:[track artist]];
+                usleep(1000000);
 
-				if ([lyrics length] > 0) 
-				{
-					NSLog(@"… found lyrics with length %ld", [lyrics length]);
-					NSLog(@"\n%@", lyrics);
-					break;
-				}
-				else 
-				{
-					NSLog(@"… lyrics not found.");
-				}
+                if ([lyrics length] > 0)
+                {
+                    NSLog(@"… found lyrics with length %ld", [lyrics length]);
+                    NSLog(@"\n%@", lyrics);
+                    break;
+                }
+                else
+                {
+                    NSLog(@"… lyrics not found.");
+                }
 			}
 		}
 		

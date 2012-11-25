@@ -112,7 +112,7 @@
 		C8B14ED714F90CFF00C6FDC2 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0430;
+				LastUpgradeCheck = 0450;
 				ORGANIZATIONNAME = "Toomas Vahter";
 			};
 			buildConfigurationList = C8B14EDA14F90CFF00C6FDC2 /* Build configuration list for PBXProject "AZLyrics" */;
@@ -217,6 +217,7 @@
 		C8B14EEF14F90CFF00C6FDC2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AZLyrics/AZLyrics-Prefix.pch";
 				INFOPLIST_FILE = "AZLyrics/AZLyrics-Info.plist";
@@ -229,6 +230,7 @@
 		C8B14EF014F90CFF00C6FDC2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AZLyrics/AZLyrics-Prefix.pch";
 				INFOPLIST_FILE = "AZLyrics/AZLyrics-Info.plist";

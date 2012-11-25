@@ -112,7 +112,7 @@
 		C82F84D514ADD890001B15AF /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0430;
+				LastUpgradeCheck = 0450;
 				ORGANIZATIONNAME = "Toomas Vahter";
 			};
 			buildConfigurationList = C82F84D814ADD890001B15AF /* Build configuration list for PBXProject "PLyrics" */;
@@ -217,6 +217,7 @@
 		C82F84ED14ADD892001B15AF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PLyrics/PLyrics-Prefix.pch";
 				INFOPLIST_FILE = "PLyrics/PLyrics-Info.plist";
@@ -229,6 +230,7 @@
 		C82F84EE14ADD892001B15AF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PLyrics/PLyrics-Prefix.pch";
 				INFOPLIST_FILE = "PLyrics/PLyrics-Info.plist";

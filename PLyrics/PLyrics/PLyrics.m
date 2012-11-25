@@ -69,59 +69,25 @@
 	NSString *pageSource = [[NSString alloc] initWithContentsOfURL:url usedEncoding:nil error:&error];
 	NSMutableString *fetchedLyrics = nil;
 	
-	if (pageSource) 
+	if (pageSource)
 	{
-		NSRange startRange = [pageSource rangeOfString:@"<!-- song body -->"];
-		NSRange endRange = [pageSource rangeOfString:@"<!-- end of song body -->"];
+		NSRange startRange = [pageSource rangeOfString:@"<!-- start of lyrics -->"];
+		NSRange endRange = [pageSource rangeOfString:@"<!-- end of lyrics -->"];
 		
-		if (startRange.length > 0 && endRange.length > 0 && NSMaxRange(startRange) < endRange.location) 
+		if (startRange.length > 0 && endRange.length > 0 && NSMaxRange(startRange) < endRange.location)
 		{
 			NSRange lyricsRange = NSMakeRange(NSMaxRange(startRange), endRange.location - NSMaxRange(startRange));
 			fetchedLyrics = [[NSMutableString alloc] initWithString:[pageSource substringWithRange:lyricsRange]];
 			
-			// <!-- AddThis Button BEGIN --> <!-- AddThis Button END -->
-			[fetchedLyrics deleteCharactersFromRangeOfString:@"<!-- AddThis Button BEGIN -->" toRangeOfString:@"<!-- AddThis Button END -->"];
-			
-			// <!-- JANGO PLAYER --> <!-- END OF JANGO PLAYER -->
-			[fetchedLyrics deleteCharactersFromRangeOfString:@"<!-- JANGO PLAYER -->" toRangeOfString:@"<!-- END OF JANGO PLAYER -->"];
-			
-			// Remove <br>
-			[fetchedLyrics replaceOccurrencesOfString:@"<br>" withString:@"" options:NSCaseInsensitiveSearch range:NSMakeRange(0, [fetchedLyrics length])];
-						
-			// Remove italic, headers etc
-			NSArray *tags = [[NSArray alloc] initWithObjects:@"div", @"a", @"i", @"b", @"h1", @"h2", @"h3", @"h4", @"h5", nil];
-			NSString *tag = nil;
-			NSRange tagStartRange = NSMakeRange(NSNotFound, 0);
-			NSRange tagEndRange = NSMakeRange(NSNotFound, 0);
-			
-			for (tag in tags) 
-			{
-				BOOL tagRemoved = NO;
-				
-				while (!tagRemoved) 
-				{
-					tagStartRange = [fetchedLyrics rangeOfString:[NSString stringWithFormat:@"<%@", tag]];
-					tagEndRange = [fetchedLyrics rangeOfString:[NSString stringWithFormat:@"</%@>", tag]];
-					
-					if (tagStartRange.location != NSNotFound && tagEndRange.location != NSNotFound && NSMaxRange(tagStartRange) < tagEndRange.location) 
-					{
-						[fetchedLyrics deleteCharactersInRange:NSMakeRange(tagStartRange.location, NSMaxRange(tagEndRange) - tagStartRange.location)];
-					}
-					else 
-					{
-						tagRemoved = YES;
-					}
-				}
-			}
-			
-			[fetchedLyrics deleteCharactersFromRangeOfString:@"[" toRangeOfString:@"]"];
+            while ([fetchedLyrics deleteCharactersFromString:@"<" toString:@">" includingStrings:YES])
+            {}
 		}
 	}
-	else 
+	else
 	{
 		NSLog(@"Failed fetching page source at url (%@) with error %@", url, [error localizedDescription]);
 	}
-	
+    
 	return [fetchedLyrics stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
 }
 

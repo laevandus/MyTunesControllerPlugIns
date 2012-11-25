@@ -39,7 +39,7 @@
 
 
 - (NSString *)lyricsForTrackName:(NSString *)name artist:(NSString *)artist album:(NSString *)album
-{	
+{
 	// Cleaning artist and track name
 	NSMutableString *cleanedArtistString = [[NSMutableString alloc] initWithString:[artist lowercaseString]];
 	NSMutableString *cleanedNameString = [[NSMutableString alloc] initWithString:[name lowercaseString]];
@@ -78,33 +78,9 @@
 		{
 			NSRange lyricsRange = NSMakeRange(NSMaxRange(startRange), endRange.location - NSMaxRange(startRange));
 			fetchedLyrics = [[NSMutableString alloc] initWithString:[pageSource substringWithRange:lyricsRange]];
-			[fetchedLyrics replaceOccurrencesOfString:@"<br>" withString:@"" options:NSCaseInsensitiveSearch range:NSMakeRange(0, [fetchedLyrics length])];
-						
-			// Remove italic, headers etc
-			NSArray *tags = [[NSArray alloc] initWithObjects:@"i", @"b", @"h1", @"h2", @"h3", @"h4", @"h5", nil];
-			NSString *tag = nil;
-			NSRange tagStartRange = NSMakeRange(NSNotFound, 0);
-			NSRange tagEndRange = NSMakeRange(NSNotFound, 0);
 			
-			for (tag in tags) 
-			{
-				BOOL tagRemoved = NO;
-				
-				while (!tagRemoved) 
-				{
-					tagStartRange = [fetchedLyrics rangeOfString:[NSString stringWithFormat:@"<%@>", tag]];
-					tagEndRange = [fetchedLyrics rangeOfString:[NSString stringWithFormat:@"</%@>", tag]];
-					
-					if (tagStartRange.location != NSNotFound && tagEndRange.location != NSNotFound && NSMaxRange(tagStartRange) < tagEndRange.location) 
-					{
-						[fetchedLyrics deleteCharactersInRange:NSMakeRange(tagStartRange.location, NSMaxRange(tagEndRange) - tagStartRange.location)];
-					}
-					else 
-					{
-						tagRemoved = YES;
-					}
-				}
-			}
+            while ([fetchedLyrics deleteCharactersFromString:@"<" toString:@">" includingStrings:YES])
+            {}
 		}
 	}
 	else 

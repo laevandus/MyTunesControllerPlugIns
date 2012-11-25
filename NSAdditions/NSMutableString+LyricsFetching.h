@@ -30,10 +30,7 @@
 
 @interface NSMutableString (LyricsFetching)
 
-- (void)deleteCharactersFromRangeOfString:(NSString *)startString toRangeOfString:(NSString *)endString;
-- (void)deleteCharactersToMaximumRangeOfString:(NSString *)searchString;
-- (void)deleteCharactersFromMaximumRangeOfString:(NSString *)searchString;
-
+- (BOOL)deleteCharactersFromString:(NSString *)startString toString:(NSString *)stopString includingStrings:(BOOL)flag;
 - (void)deleteCharactersInSet:(NSCharacterSet *)set;
 
 @end
