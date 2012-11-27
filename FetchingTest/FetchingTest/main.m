@@ -87,7 +87,7 @@ int main(int argc, const char * argv[])
 			{
                 NSLog(@"Fetching using %@…", [plugIn name]);
 				
-                lyrics = [(id<LyricsFetching>)plugIn lyricsForTrackName:[track name] artist:[track artist] album:[track artist]];
+                lyrics = [(id<LyricsFetching>)plugIn lyricsForTrackName:[track name] artist:[track artist] album:[track album]];
                 usleep(1000000);
 
                 if ([lyrics length] > 0)
