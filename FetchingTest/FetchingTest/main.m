@@ -30,6 +30,7 @@
 #import "LyricsFetching.h"
 #import "AZLyrics.h"
 #import "PLyrics.h"
+#import "Lyrics.h"
 
 int main(int argc, const char * argv[])
 {
@@ -71,8 +72,9 @@ int main(int argc, const char * argv[])
 		
 		// Initiate lyrics fetching instances
 		NSArray *plugIns = @[
-            [[AZLyrics alloc] init],
-							[[PLyrics alloc] init]];
+        //  [[AZLyrics alloc] init],
+        //							[[PLyrics alloc] init],
+        [[Lyrics alloc] init]];
 		
 		// Fetch lyrics
 		iTunesTrack *track = nil;
