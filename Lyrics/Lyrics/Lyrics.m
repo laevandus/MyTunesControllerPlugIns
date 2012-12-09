@@ -118,7 +118,13 @@
 		NSLog(@"Failed fetching page source at url (%@) with error %@", url, [error localizedDescription]);
 	}
     
-	return [fetchedLyrics stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
+    if ([fetchedLyrics length])
+    {
+        NSString *cleanedString = [fetchedLyrics stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
+        return (__bridge NSString *)CFXMLCreateStringByUnescapingEntities(NULL, (__bridge CFStringRef)cleanedString, NULL);
+    }
+    
+    return nil;
 }
 
 @end
