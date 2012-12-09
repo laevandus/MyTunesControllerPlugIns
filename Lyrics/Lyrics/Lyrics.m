@@ -61,7 +61,9 @@
     {
         NSMutableString *cleanedComponent = [NSMutableString stringWithString:component];
         [cleanedComponent deleteCharactersInSet:set];
-        [subpath appendFormat:@"%@-", cleanedComponent];
+        
+        if ([cleanedComponent length])
+            [subpath appendFormat:@"%@-", cleanedComponent];
     }
     
     // Delete last - and append .html
