@@ -31,6 +31,7 @@
 #import "AZLyrics.h"
 #import "PLyrics.h"
 #import "Lyrics.h"
+#import "LyricsMania.h"
 
 int main(int argc, const char * argv[])
 {
@@ -74,7 +75,9 @@ int main(int argc, const char * argv[])
 		NSArray *plugIns = @[
         //  [[AZLyrics alloc] init],
         //							[[PLyrics alloc] init],
-        [[Lyrics alloc] init]];
+        //[[Lyrics alloc] init],
+        [[LyricsMania alloc] init]
+        ];
 		
 		// Fetch lyrics
 		iTunesTrack *track = nil;

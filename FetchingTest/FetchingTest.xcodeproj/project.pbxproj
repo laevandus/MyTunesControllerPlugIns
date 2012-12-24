@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		C80F680D16656EEC00DEADFA /* Lyrics.m in Sources */ = {isa = PBXBuildFile; fileRef = C80F680C16656EEC00DEADFA /* Lyrics.m */; };
+		C8B4A73B1688E84600782143 /* LyricsMania.m in Sources */ = {isa = PBXBuildFile; fileRef = C8B4A73A1688E84600782143 /* LyricsMania.m */; };
 		C8D55D10150362F2008E1AA9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8D55D0F150362F2008E1AA9 /* Foundation.framework */; };
 		C8D55D13150362F2008E1AA9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C8D55D12150362F2008E1AA9 /* main.m */; };
 		C8D55D17150362F2008E1AA9 /* FetchingTest.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = C8D55D16150362F2008E1AA9 /* FetchingTest.1 */; };
@@ -33,6 +34,8 @@
 /* Begin PBXFileReference section */
 		C80F680B16656EEC00DEADFA /* Lyrics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Lyrics.h; path = ../../Lyrics/Lyrics/Lyrics.h; sourceTree = "<group>"; };
 		C80F680C16656EEC00DEADFA /* Lyrics.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Lyrics.m; path = ../../Lyrics/Lyrics/Lyrics.m; sourceTree = "<group>"; };
+		C8B4A7391688E84600782143 /* LyricsMania.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LyricsMania.h; path = ../../LyricsMania/LyricsMania/LyricsMania.h; sourceTree = "<group>"; };
+		C8B4A73A1688E84600782143 /* LyricsMania.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LyricsMania.m; path = ../../LyricsMania/LyricsMania/LyricsMania.m; sourceTree = "<group>"; };
 		C8D55D0B150362F2008E1AA9 /* FetchingTest */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = FetchingTest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8D55D0F150362F2008E1AA9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		C8D55D12150362F2008E1AA9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -100,6 +103,8 @@
 				C8D55D2E150366D0008E1AA9 /* PLyrics.m */,
 				C80F680B16656EEC00DEADFA /* Lyrics.h */,
 				C80F680C16656EEC00DEADFA /* Lyrics.m */,
+				C8B4A7391688E84600782143 /* LyricsMania.h */,
+				C8B4A73A1688E84600782143 /* LyricsMania.m */,
 				C8D55D23150366B5008E1AA9 /* NSMutableString+LyricsFetching.h */,
 				C8D55D24150366B5008E1AA9 /* NSMutableString+LyricsFetching.m */,
 				C8D55D16150362F2008E1AA9 /* FetchingTest.1 */,
@@ -172,6 +177,7 @@
 				C8D55D26150366B5008E1AA9 /* NSMutableString+LyricsFetching.m in Sources */,
 				C8D55D2F150366D0008E1AA9 /* PLyrics.m in Sources */,
 				C80F680D16656EEC00DEADFA /* Lyrics.m in Sources */,
+				C8B4A73B1688E84600782143 /* LyricsMania.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
